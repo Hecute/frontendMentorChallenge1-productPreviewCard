@@ -6,9 +6,13 @@ body{
 section{
     background-color: white;
     display: flex;
-    margin: 300px auto;
+    margin: auto;
     width: 1200px;
     border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .productPhoto{
     border-radius: 25px 0 0 25px;
