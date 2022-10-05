@@ -7,59 +7,22 @@ section{
     background-color: white;
     display: flex;
     margin: auto;
-    width: 1200px;
-    border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.productPhoto{
-    border-radius: 25px 0 0 25px;
-}
 
 .productInfo{
-    width: 600px;
-    margin: 50px;
     display: flex;
     flex-direction: column;
-}
-
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 10px;
-    font-size: 25px;
-    color: grey;
-}
-
-h2{
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 0.9;
-    margin-block: 0.5em;
-}
-
-p{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    color: grey;
 }
 
 .price{
     display: flex;
 }
 
-.newPrice{
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 0.9;
-    margin-block: 0.5em;
-    color: hsl(158, 36%, 37%);
-}
+
 
 .oldPrice{
     margin: auto;
@@ -68,7 +31,6 @@ p{
 
 button{
     background-color: hsl(158, 36%, 37%);
-    font-size: 30px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -76,10 +38,8 @@ button{
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 100px;
     flex-wrap: wrap;
     align-content: center;
-    border-radius: 15px;
     border-style: none;
 }
 
@@ -87,8 +47,128 @@ button:hover{
     background-color: hsl(159, 37%, 15%);
     cursor: pointer;
 }
-.cartIcon{
-    width: 30px;
-    height: 30px;
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: grey;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: grey;
+}
+
+.newPrice{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-block: 0.5em;
+    color: hsl(158, 36%, 37%);
+}
+
+/*for mobile with min width 375px*/
+@media  (min-width: 375px) {
+
+    section{
+        flex-direction: column;
+        width: 340px;
+        border-radius: 15px;
+    }
+    .productPhoto{
+        content: url("images/image-product-mobile.jpg");
+        border-radius: 15px 15px 0 0;
+    }
+
+    .productInfo{
+        margin: 25px;
+    }
+
+    h1{
+        font-size: 12px;
+        letter-spacing: 7px;
+    }
+
+    h2{
+        font-size: 32px;
+        margin-block: 0.1em;
+    }
+
+    p{
+        font-size: 14px;
+        letter-spacing: -0.1px;
+        line-height: 22px;
+    }
+
+    .newPrice{
+        font-size: 40px;
+    }
+
+    button{
+        height: 55px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .cartIcon{
+        width: 20px;
+        height: 20px;
+    }
+}
+/*for desktop with min width 1440 px*/
+@media (min-width: 1440px) {
+    section{
+        flex-direction: row;
+        width: 1200px;
+        border-radius: 25px;
+    }
+    .productPhoto{
+        content: url("images/image-product-desktop.jpg");
+        border-radius: 25px 0 0 25px;
+    }
+
+    .productInfo{
+        width: 600px;
+        margin: 50px;
+    }
+
+    h1{
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+    h2{
+        font-size: 75px;
+        margin-block: 0.5em;
+    }
+
+    p{
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .newPrice{
+        font-size: 75px;
+        line-height: 0.9;
+    }
+
+    button{
+        height: 100px;
+        border-radius: 15px;
+        font-size: 30px;
+    }
+
+    .cartIcon{
+        width: 30px;
+        height: 30px;
+    }
+
 
 }
